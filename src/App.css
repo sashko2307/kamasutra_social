@@ -15,21 +15,10 @@ img {
 	max-width: 900px;
 	margin: auto;
 }
-header {
-	grid-area: header;
-	background: forestgreen;
-	padding: 5px 15px;
-	margin-bottom: 15px;
-}
-.nav {
-	grid-area: nav;
-	background: forestgreen;
-	padding: 15px;
-}
+
+
 .main {
 	grid-area: main;
 	padding: 0 0 0 15px;
 }
-.image {
-	padding:  0 0;
-}
+

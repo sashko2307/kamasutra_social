@@ -1,11 +1,12 @@
 
 import logo2 from './../1-22.jpg';
 import React from 'react';
+import cl from './Profile/Profile.module.css'
 
 function Profile(props) {
 	return (
 		<div>
-			<div className="image">
+			<div className={cl.image}>
 				  <img src={logo2} alt="pix" />
 			  </div>
 			  <div className="ava">
