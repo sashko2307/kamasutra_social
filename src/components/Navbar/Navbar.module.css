@@ -7,6 +7,10 @@
 	color: #fff;
 	margin: 10px 0;
 }
+.item.active {
+	color: gold;
+	font-weight: bold;
+}
 .item a {
 	color: #fff;
 }
