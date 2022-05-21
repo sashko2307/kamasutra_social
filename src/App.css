@@ -15,10 +15,28 @@ img {
 	max-width: 900px;
 	margin: auto;
 }
-
-
+a {
+	text-decoration: none;
+	transition: all .3s;
+}
+a:hover {
+	opacity: .8;
+}
+.col {
+	padding: 0 12px;
+}
+.row {
+	margin-left: -12px;
+	margin-right: -12px;
+}
 .main {
 	grid-area: main;
 	padding: 0 0 0 15px;
+}
+button.button {
+	min-width: 220px;
+	padding: 0 22px;
+	height: 40px;
+	cursor: pointer;
 }
 

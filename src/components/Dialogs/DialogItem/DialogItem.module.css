@@ -1,0 +1,9 @@
+
+.dialog {
+	margin: 15px 0;
+}
+.dialog .active {
+	color: gold;
+	font-weight: bold;
+}
+

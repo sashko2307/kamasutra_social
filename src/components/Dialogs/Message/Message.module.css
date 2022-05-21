@@ -1,0 +1,7 @@
+
+.messages {
+	flex-grow: 1;
+}
+.message {
+	margin: 15px 0;
+}
