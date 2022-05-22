@@ -5,7 +5,9 @@ import cl from "./Dialogs.module.css";
 import Message from "./Message/Message";
 
 
-
+const addPost = (e) => {
+	console.log(e)
+}
 
 
 
@@ -18,7 +20,12 @@ const Dialogs = (props) => {
 				})}
             </div>
 			<div className={ `${cl.messages} col` }>
-				{props.messages.map(message => <Message id={message.id} message={message.message} key={message.id} />)}
+				{ props.messages.map(message => <Message id={ message.id } message={ message.message } key={ message.id } />) }
+				
+				<div className="inputBlock">
+					<textarea name=""></textarea>
+					<button onClick={(e) => addPost(e.target.innerText)}>Добавить</button>
+				</div>
             </div>
         </div>
     );

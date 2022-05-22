@@ -5,22 +5,36 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from "./components/Profile/Profile";
 
-// сверстать покрасивей диалоги и сделать в навбаре друзей
+let man = {
+	name: 'dm',
+	age: 22,
+	sayName() {
+		console.log(this.name)
+	}
+}
+man.sayName()
 
 function App(props) {
-	
     return (
         <BrowserRouter>
             <div className='social-wrapper'>
                 <Header />
                 <Navbar sidebar={props.state.sidebar} />
                 <div className='main'>
-                    <Routes>
-                        <Route exact path='/profile' element={<Profile posts={props.state.profilePage.posts} />} />
+					<Routes>
+						
+						<Route exact path='/profile' element={
+							<Profile
+								profilePage={ props.state.profilePage }
+								addPost={ props.addPost }
+								updateNewPostText={ props.updateNewPostText }
+							/> } />
+						
 						<Route exact path='/dialogs/*' element={
 							<Dialogs dialogs={ props.state.dialogsPage.dialogs } messages={props.state.dialogsPage.messages}
 							/>
 						} />
+
                     </Routes>
                 </div>
             </div>
