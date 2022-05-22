@@ -1,0 +1,8 @@
+.fiends {
+	display: flex;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: 50px;
+	justify-content: space-between;
+	text-align: center;
+}
